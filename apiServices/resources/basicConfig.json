@@ -1,0 +1,11 @@
+{
+	"preprod": {
+		"url": "",
+		"credentials": {
+			"sample": {
+				"email": "",
+				"password": ""
+			}	
+		}
+	}
+}
