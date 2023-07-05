@@ -1,0 +1,36 @@
+export interface webPay {
+	billAmount?: number;
+	originalBillId?: string;
+	billId?: string;
+	originalBillDate?: string;
+	billDate?: string;
+	category?: string;
+	offerCode?: string;
+	productName?: string;
+	storeName?: string | number;
+	skuCode?: string;
+	quantity?: number | string;
+	paymentMode?: string;
+	paymentValue?: number;
+	loyaltyAmount?: number;
+	loyaltyDiscount?: number;
+	billDiscount?: number;
+	productDiscount?: number;
+	total?: number;
+	netAmount?: number | string;
+	billLevelOfferDiscount?: number | string;
+	invoiceType?: string;
+	channel?: string | number;
+	paymentSplits?: any[];
+	sourceSystem?: string;
+	billType?: string;
+	billGuId?: string;
+	correlationId?: string;
+	externalCustomerId?: string;
+	sourceTenantId?: string;
+	sourceBusinessUnitId?: string;
+	businessUnit?: string;
+	customerEmail?: string;
+	billNetAmount?: number;
+	customerMobile?: string;
+}

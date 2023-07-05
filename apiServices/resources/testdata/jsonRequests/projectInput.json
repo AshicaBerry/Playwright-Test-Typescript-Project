@@ -1,0 +1,66 @@
+{
+    "invoiceType": "IN",
+    "sourceSystem": "Ginesys",
+    "billType": "Retail",
+    "channel": "POS",
+    "billDate": "2022-07-07T06:39:28.259Z",
+    "billLevelOfferDiscount": 5,
+    "billGuId": "241-2-060522160352",
+    "correlationId": "241-2-060522160352",
+    "billId": "automation-nIFbZIRBZP_0001",
+    "externalCustomerId": "automation-1099345535",
+    "originalBillId": "automation-nIFbZIRBZP_0001",
+    "originalBillDate": "2022-07-07T06:39:28.259Z",
+    "orderItems": [
+        {
+            "total": 200,
+            "quantity": 2,
+            "price": 100,
+            "loyaltyAmount": 0,
+            "billDiscount": 1.667,
+            "productDiscount": 10,
+            "name": "order1",
+            "mrp": null,
+            "skuCode": "BillBasedSkuCode",
+            "category": "shirt",
+            "loyaltyDiscount": 0,
+            "netAmount": 188.333
+        },
+        {
+            "total": 400,
+            "quantity": 2,
+            "price": 200,
+            "loyaltyAmount": 0,
+            "billDiscount": 3.333,
+            "productDiscount": 20,
+            "name": "order2",
+            "mrp": null,
+            "skuCode": "BillBasedSkuCode2",
+            "category": "Pant",
+            "loyaltyDiscount": 0,
+            "netAmount": 376.667
+        }
+    ],
+    "paymentSplits": [
+        {
+            "mode": "EDC",
+            "value": 0
+        },
+        {
+            "mode": "loyalty",
+            "value": 0
+        },
+        {
+            "mode": "Couponcode",
+            "value": 0
+        }
+    ],
+    "billAmount": 600,
+    "storeName": "Store123",
+    "sourceTenantId": "107",
+    "sourceBusinessUnitId": "107",
+    "customerMobile": "1325569641",
+    "customerEmail": "sivasun2709@gmail.com",
+    "businessUnit": "sohumshoppe",
+    "billNetAmount": 565
+}

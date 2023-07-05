@@ -27,4 +27,11 @@ export module LoginUtil {
 		const loginHdr: any = [['content-type', 'application/json']];
 		return loginHdr;
 	}
+
+	export function getTenantToken(tenantName: string): string {
+		return JsonReaderHelper.readAttribute(
+			`$.${env}.credentials.${tenantName}.tenantToken`,
+			basicConfigFilePath,
+		);
+	}
 }
