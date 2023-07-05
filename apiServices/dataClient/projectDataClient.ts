@@ -1,8 +1,9 @@
 import path from 'path';
 import { LoginUtil } from '../../utils/loginUtil';
 import { JsonReaderHelper } from '../../webservicesExport';
-import { webPay } from '../customTypes/project';
+import { sample } from '../customTypes/project';
 import { Constants } from '../resources/constants';
+import { BillSyncRequest } from '../models/request/inputRequest';
 const jsonFile = path.join(
 	Constants.dataFolderPath,
 	'/jsonRequests/projectInput.json',
@@ -18,23 +19,22 @@ export module projectDataClient {
 	}
 
 	export async function createSingleBillSyncRequestWithCustomFields(
-		billSyncInputData: webPay,
-	): Promise<webPay> {
-		const request = JsonReaderHelper.readAttribute('$', jsonFile) as webPay;
+		billSyncInputData: sample,
+	): Promise<BillSyncRequest> {
+		const request: BillSyncRequest = JsonReaderHelper.readAttribute(
+			'$',
+			jsonFile,
+		) as BillSyncRequest;
 		request.invoiceType = billSyncInputData.invoiceType;
 		request.sourceSystem = billSyncInputData.sourceSystem;
 		request.billType = billSyncInputData.billType;
-		request.channel = billSyncInputData.channel;
 		request.billDate = billSyncInputData.billDate;
-		request.billLevelOfferDiscount =
-			billSyncInputData.billLevelOfferDiscount;
 		request.billGuId = billSyncInputData.billGuId;
 		request.correlationId = billSyncInputData.correlationId;
 		request.billId = billSyncInputData.billId;
 		request.externalCustomerId = billSyncInputData.externalCustomerId;
 		request.paymentSplits = billSyncInputData.paymentSplits;
 		request.billAmount = billSyncInputData.billAmount;
-		request.storeName = billSyncInputData.storeName;
 		request.sourceTenantId = billSyncInputData.sourceTenantId;
 		request.sourceBusinessUnitId = billSyncInputData.sourceBusinessUnitId;
 		request.customerMobile = billSyncInputData.customerMobile;

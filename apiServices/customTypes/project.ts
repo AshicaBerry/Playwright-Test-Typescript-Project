@@ -1,4 +1,4 @@
-export interface webPay {
+export interface sample {
 	billAmount?: number;
 	originalBillId?: string;
 	billId?: string;

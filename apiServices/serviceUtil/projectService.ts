@@ -1,13 +1,13 @@
 import { LoginUtil } from '../../utils/loginUtil';
-import { webPay } from '../customTypes/project';
+import { sample } from '../customTypes/project';
 import { RequestResponseHolder } from '../customTypes/requestResponseCustomType';
 import { projectDataClient } from '../dataClient/projectDataClient';
 import { Urls } from '../resources/urls';
 import { BaseService } from './baseService';
 
 export class ProjectService extends BaseService {
-	static async createWebPay(
-		input: webPay,
+	static async createSamplePay(
+		input: sample,
 		tenantName: string,
 	): Promise<RequestResponseHolder> {
 		try {
